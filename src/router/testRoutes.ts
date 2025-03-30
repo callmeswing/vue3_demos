@@ -2,6 +2,10 @@ import type { RouteRecordRaw } from "vue-router";
 
 export const testBasicRoutes: Array<RouteRecordRaw> = [
   {
+    path: "computedFunc",
+    component: () => import("@testBasic/ComputedFunc.vue"),
+  },
+  {
     path: "eventProcess",
     component: () => import("@testBasic/EventProcess.vue"),
   },
@@ -11,7 +15,11 @@ export const testBasicRoutes: Array<RouteRecordRaw> = [
   },
   {
     path: "watchFunc",
-    component: () => import("@testBasic/watchFunc.vue"),
+    component: () => import("@testBasic/WatchFunc.vue"),
+  },
+  {
+    path: "watchCleanup",
+    component: () => import("@testBasic/WatchCleanup.vue"),
   },
 ];
 
