@@ -8,7 +8,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { reactive, ref, watch, watchEffect, onWatcherCleanup } from "vue";
+import { reactive, ref, watch, watchEffect } from "vue";
 
 // 先前掌握了计算属性：声明式的计算衍生值，可以看作是一种状态变化
 /**
@@ -25,7 +25,7 @@ const answer = ref("Questions usually contain a question mark like ?");
 const loading = ref(false);
 
 // watch 监听question
-watch(question, async (newQuestion, oldQuestion) => {
+watch(question, async (newQuestion, _oldQuestion) => {
   if (newQuestion.includes("?")) {
     loading.value = true;
     answer.value = "Thinking...";
@@ -43,7 +43,7 @@ watch(question, async (newQuestion, oldQuestion) => {
 // 深层侦听
 // 侦听响应式对象reactive时(ref是响应式引用) ，隐式创建深层侦听器——所有嵌套属性变更时都会触发回调
 const obj = reactive({ count: 0, nested: { value: 10 } });
-watch(obj, (newValue, oldValue) => {
+watch(obj, (_newValue, _oldValue) => {
   // 此时监听obj所有内部属性的变化
   // 此时 newValue与oldValue是相等的 是同一个对象(引用)
 });

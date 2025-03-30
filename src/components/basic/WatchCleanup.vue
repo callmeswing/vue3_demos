@@ -15,7 +15,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { onWatcherCleanup, ref, watch, watchEffect, type WatchHandle } from "vue";
+import { onWatcherCleanup, ref, watch, watchEffect } from "vue";
 
 // 副作用清理
 // Vue 3.5 新增onWatchCleanup API
