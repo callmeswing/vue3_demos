@@ -35,4 +35,9 @@ export const testBasicRoutes: Array<RouteRecordRaw> = [
   },
 ];
 
-export const testAdvancedRoutes: Array<RouteRecordRaw> = [];
+export const testAdvancedRoutes: Array<RouteRecordRaw> = [
+  {
+    path: "componentRegistration",
+    component: () => import("@testAdvanced/CompRegistration.vue"),
+  },
+];
