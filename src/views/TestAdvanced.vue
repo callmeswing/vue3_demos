@@ -6,6 +6,8 @@
     </router-link>
     <router-link to="/test/advanced/props">props细节 </router-link>
     <router-link to="/test/advanced/functions">function细节 </router-link>
+    <br />
+    <router-link to="/test/advanced/slots">slots 细节 </router-link>
   </nav>
   <main><router-view /></main>
 </template>

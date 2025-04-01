@@ -48,4 +48,8 @@ export const testAdvancedRoutes: Array<RouteRecordRaw> = [
     path: "functions",
     component: () => import("@testAdvanced/Functions.vue"),
   },
+  {
+    path: "slots",
+    component: () => import("@testAdvanced/Slots.vue"),
+  },
 ];
