@@ -4,6 +4,8 @@
     <router-link to="/test/advanced/componentRegistration"
       >组件注册
     </router-link>
+    <router-link to="/test/advanced/props">props细节 </router-link>
+    <router-link to="/test/advanced/functions">function细节 </router-link>
   </nav>
   <main><router-view /></main>
 </template>
