@@ -52,4 +52,8 @@ export const testAdvancedRoutes: Array<RouteRecordRaw> = [
     path: "slots",
     component: () => import("@testAdvanced/Slots.vue"),
   },
+  {
+    path: "models",
+    component: () => import("@testAdvanced/Models.vue"),
+  },
 ];
