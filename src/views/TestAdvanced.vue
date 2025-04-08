@@ -9,6 +9,9 @@
     <br />
     <router-link to="/test/advanced/slots">slots 细节 </router-link>
     <router-link to="/test/advanced/models">model 细节 </router-link>
+    <router-link to="/test/advanced/modelsWithAnt"
+      >model搭配ant-design
+    </router-link>
   </nav>
   <main><router-view /></main>
 </template>
