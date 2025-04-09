@@ -61,4 +61,8 @@ export const testAdvancedRoutes: Array<RouteRecordRaw> = [
     component: () =>
       import("@testAdvanced/modelWithAnt/ModelWithAntParent.vue"),
   },
+  {
+    path: "attrs",
+    component: () => import("@testAdvanced/Attrs.vue"),
+  },
 ];
