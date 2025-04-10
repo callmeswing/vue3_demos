@@ -25,7 +25,7 @@ import FancyList from "./FancyList.vue";
  * 	插槽：组件接收模板
  * 	<slot><slot/> slot元素是一个插槽出口 slot outlet	父元素提供插槽内容 slot content
  *
- * 	作用领：
+ * 	作用域：
  * 	插槽内容可以访问父组件的数据作用域，这并不奇怪，因为内容本身就是在父组件模板中定义的。
  * 	也因此，插槽内容无法访问子组件的数据。Vue模板中的表达式只能访问其定义时所处的作用域，同JS的词法作用域。
  *
@@ -46,7 +46,7 @@ import FancyList from "./FancyList.vue";
 	  ❗ v-slot指令 缩写#
 	  			<template #main>
 
-		同是传递具名插槽内容 和 默认插槽内容
+		同时传递具名插槽内容 和 默认插槽内容
 		所有顶级的非<template>内容会被隐式视为默认插槽的内容
 			<MyComponent>
 				<template #header>
