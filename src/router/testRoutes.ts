@@ -69,4 +69,8 @@ export const testAdvancedRoutes: Array<RouteRecordRaw> = [
     path: "provider",
     component: () => import("@testAdvanced/injection/Provider.vue"),
   },
+  {
+    path: "asyncComp",
+    component: () => import("@testAdvanced/AsyncCompTest.vue"),
+  },
 ];

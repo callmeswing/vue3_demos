@@ -15,6 +15,8 @@
     <br />
     <router-link to="/test/advanced/attrs">attrs细节 </router-link>
     <router-link to="/test/advanced/provider">provide&inject </router-link>
+    <br />
+    <router-link to="/test/advanced/asyncComp">异步组件 </router-link>
   </nav>
   <main><router-view /></main>
 </template>
