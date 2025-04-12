@@ -74,3 +74,18 @@ export const testAdvancedRoutes: Array<RouteRecordRaw> = [
     component: () => import("@testAdvanced/AsyncCompTest.vue"),
   },
 ];
+
+export const testLogicalReuseRoutes: Array<RouteRecordRaw> = [
+  {
+    path: "mouse-position",
+    component: () => import("@testLogicalReuse/mousePosition.vue"),
+  },
+  {
+    path: "mouse-position-temp",
+    component: () => import("@testLogicalReuse/mousePositionTemplate.vue"),
+  },
+  {
+    path: "mouse-position-temp2",
+    component: () => import("@testLogicalReuse/mousePositionTemplate2.vue"),
+  },
+];

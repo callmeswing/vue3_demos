@@ -1,5 +1,9 @@
 import type { RouteRecordRaw } from "vue-router";
-import { testBasicRoutes, testAdvancedRoutes } from "./testRoutes";
+import {
+  testBasicRoutes,
+  testAdvancedRoutes,
+  testLogicalReuseRoutes,
+} from "./testRoutes";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -21,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
         path: "advanced",
         component: () => import("@views/TestAdvanced.vue"),
         children: testAdvancedRoutes,
+      },
+      {
+        path: "logical-reuse",
+        component: () => import("@views/TestLogicalReuse.vue"),
+        children: testLogicalReuseRoutes,
       },
     ],
   },

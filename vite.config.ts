@@ -11,6 +11,7 @@ export default defineConfig({
       "@views": "/src/views",
       "@testBasic": "/src/components/basic",
       "@testAdvanced": "/src/components/advanced",
+      "@testLogicalReuse": "/src/components/logicalReuse",
     },
   },
   //  以下build方式是为了更好阅读，仅限于开发阶段

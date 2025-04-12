@@ -11,7 +11,8 @@
       "@cp": ["src/components"],
       "@views": ["src/views"],
       "@testBasic": ["/src/components/basic"],
-      "@testAdvanced": ["src/components/advanced"]
+      "@testAdvanced": ["src/components/advanced"],
+      "@testLogicalReuse": ["src/components/logicalReuse"]
     }
   }
 }
